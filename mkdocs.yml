@@ -1,0 +1,48 @@
+site_name: Dataverse Curation Guide [TEST]
+repo_url: https://github.com/reseau-portage-network/DVCG-mkdocs-test
+theme:
+  name: material
+  language: en
+  language: fr
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.tracking
+    - navigation.sections
+    - navigation.indexes
+    - toc.integrate
+  palette:
+
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: lime
+      accent: purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    
+
+plugins:
+  - search
+  - git-revision-date
+  - i18n:
+      default_language: en
+      languages:
+        en: English
+        fr: Français
+
+# Extensions
+markdown_extensions:
+  - tables
